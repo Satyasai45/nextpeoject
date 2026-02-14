@@ -39,21 +39,21 @@ export default function Header() {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 bg-violet-500 dark:bg-violet-900">
+    <div className="flex justify-between items-center p-4 bg-violet-500 dark:bg-lightblack-900 transition-colors duration-200">
       <div className="flex justify-between items-center gap-4">
-        <Link href="/" className="text-black dark:text-white text-2xl font-bold hover:text-white">Home</Link>
-        <Link href="/services" className="text-black dark:text-white text-2xl font-bold hover:text-white">Services</Link>
-        <Link href="/about" className="text-black dark:text-white text-2xl font-bold hover:text-white">About</Link>
-        <Link href="/contact" className="text-black dark:text-white text-2xl font-bold hover:text-white">Contact</Link>
+        <Link href="/" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Home</Link>
+        <Link href="/services" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Services</Link>
+        <Link href="/about" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">About</Link>
+        <Link href="/contact" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Contact</Link>
       </div>
       <div className="flex justify-between items-center gap-4">
-        <Link href="/login" className="text-black dark:text-white text-2xl font-bold hover:text-white">Login</Link>
-        <Link href="/register" className="text-black dark:text-white text-2xl font-bold hover:text-white">Register</Link>
-        <Link href="/profile" className="text-black dark:text-white text-2xl font-bold hover:text-white">Profile</Link>
+        <Link href="/login" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Login</Link>
+        <Link href="/register" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Register</Link>
+       
         <button
           onClick={toggle}
           aria-label="Toggle dark mode"
-          className="ml-2 p-2 rounded bg-white dark:bg-gray-800 text-black dark:text-white"
+          className="ml-2 p-2 rounded bg-white dark:bg-gray-800 text-black dark:text-white transition-colors duration-200"
         >
           {theme === "dark" ? "🌙" : "☀️"}
         </button>
