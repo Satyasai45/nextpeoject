@@ -39,7 +39,7 @@ export default function Header() {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 bg-violet-500 dark:bg-lightblack-900 transition-colors duration-200">
+    <div className="flex justify-between items-center p-4 bg-[#0f1111] dark:bg-[#0f1111] transition-colors duration-200">
       <div className="flex justify-between items-center gap-4">
         <Link href="/" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Home</Link>
         <Link href="/services" className="text-black dark:text-white text-2xl font-bold hover:text-white transition-colors duration-200">Services</Link>
